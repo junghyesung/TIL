@@ -1,4 +1,6 @@
-#JAVASCRIPT GRAMMER1
+#JAVASCRIPT
+
+##JAVASCRIPT GRAMMER1
 
 ###Value
 
@@ -12,7 +14,7 @@ Number, String, Boolean..
 이런 값들을 가지고 연산을 해서 돌려주고 받고 할 수 있다.
 ```
 
-#### variable
+####variable
 
 variable 변수. 변수를 선언 하는 방법 `var` , `const` , `let` 
 
@@ -22,7 +24,7 @@ var b = function () {}; // 변수 b에 함수 자체를 할당 (실행x)
 var c = []; //변수 c에 배열을 할당
 ```
 
-#### identifier(식별자)
+####identifier(식별자)
 
 **변수, 함수, 혹은 프로퍼티를 식별하는 문자열**
 식별자를 선언할 때 규칙이 있다.
@@ -36,7 +38,7 @@ var 1abc; //숫자로 시작되면 안된다.
 var var; //자바스크립트 키워드로 만들 수 없다.
 ```
 
-#### Camel Case
+####Camel Case
 
 identifier 를 지을때 camel case를 기본적으로 흔히 사용
 
@@ -59,7 +61,7 @@ typeof function foo(){}; //"function"
 typeof []; //"object"
 ```
 
-##### Javascript 의 7가지 Type
+**Javascript 의 7가지 Type**
 
 * String Type
 * Number Type
@@ -132,14 +134,12 @@ x **= 5; // x = x**5
 
 - [MDN 할당연산자 관련](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
 
-
-##### Operator Precedence(연산자 우선순위)
+**Operator Precedence(연산자 우선순위)**
 
 연산자들 사이에는 우선순위가 존재한다.  [MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/%EC%97%B0%EC%82%B0%EC%9E%90_%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84)  링크로 확인가능하다.
 
 
-
-##### parseInt, parseFloat
+**parseInt, parseFloat**
 
 문자열 구문을 분석해 수의 진법이 되는 값을 정수로 리턴.
 
@@ -147,7 +147,7 @@ x **= 5; // x = x**5
 
 ### String Type
 
-Template literal
+**Template literal**
 
 ```html
 'hello'
@@ -162,7 +162,7 @@ String(thing)
 thing 문자열로 변환할 값
 ```
 
-Handling strings
+**Handling strings**
 
 ```javascript
 //add
@@ -177,7 +177,7 @@ Handling strings
 '2' < '22' //true ?
 ```
 
-특성
+**특성**
 
 ```javascript
 'hello'[3]; //'l' string은 length값을 가질 수 있으며 배열과같이 사용 가능하다. 
