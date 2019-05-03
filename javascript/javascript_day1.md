@@ -1,8 +1,8 @@
-#JAVASCRIPT
+# JAVASCRIPT
 
-##JAVASCRIPT GRAMMER1
+## JAVASCRIPT GRAMMER1
 
-###Value
+### Value
 
 value 는 값. 값을 만드는 방법은 다양하다.
 
@@ -14,7 +14,7 @@ Number, String, Boolean..
 이런 값들을 가지고 연산을 해서 돌려주고 받고 할 수 있다.
 ```
 
-####variable
+#### variable
 
 variable 변수. 변수를 선언 하는 방법 `var` , `const` , `let` 
 
@@ -24,7 +24,7 @@ var b = function () {}; // 변수 b에 함수 자체를 할당 (실행x)
 var c = []; //변수 c에 배열을 할당
 ```
 
-####identifier(식별자)
+#### identifier(식별자)
 
 **변수, 함수, 혹은 프로퍼티를 식별하는 문자열**
 식별자를 선언할 때 규칙이 있다.
@@ -38,7 +38,7 @@ var 1abc; //숫자로 시작되면 안된다.
 var var; //자바스크립트 키워드로 만들 수 없다.
 ```
 
-####Camel Case
+#### Camel Case
 
 identifier 를 지을때 camel case를 기본적으로 흔히 사용
 
