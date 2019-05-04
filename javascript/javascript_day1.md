@@ -1,10 +1,8 @@
-# JAVASCRIPT
-
-## JAVASCRIPT GRAMMER1
+# JAVASCRIPT GRAMMER1
 
 ### Value
 
-value 는 값. 값을 만드는 방법은 다양하다.
+: value 는 값. 값을 만드는 방법은 다양하다.
 
 ```html
 1;
