@@ -30,9 +30,26 @@ if 문이 true일 경우 start의 값을 `swaps[i][0]` 과 같다면  `swaps[i][
 
 
 
+
+
 **c) 코드 구현**
 
-<script src="https://gist.github.com/junghyesung/7ea39dd4cf6a70db0a2d8d3df14a9b29.js"></script>
+```js
+function findKey (start, swaps){
+  if(swaps.length === 0){
+    return start;
+  }
+
+
+  for(var i = 0; i < swaps.length; i++) {
+    if( swaps[i][0] === start || swaps[i][1] === start ){
+      swaps[i][0] === start ? start = swaps[i][1] : start = swaps[i][0];
+    }
+  }
+  return start;
+}
+
+```
 
 
 
