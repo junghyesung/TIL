@@ -62,13 +62,13 @@ stack = "쌓여있는" stack 구조
 
 함수를 실행하는 걸 stack 이라고 생각해보자, 
 
-<img src="/Users/seongjeonghye/Desktop/스크린샷 2019-06-15 오후 5.26.09.png" style="width: 990px;">
+<img src="https://user-images.githubusercontent.com/40348757/59549201-f895a800-8f94-11e9-8c72-25c4bddd0590.png" style="width: 990px;">
 
 factorial(3) 함수를 실행하게 되면 하나의 stack 이 생기게된다.
 factorial(2) 함수를 실행한다면 factorial(3) 위로 factorial(2) stack이 쌓이게 된다.
 factorial(3) 함수는 이제 factorial(2) 함수가 종료되기 전까지 빠져 나오지 못하게 되는 것이다.
 
-<img src="/Users/seongjeonghye/Desktop/스크린샷 2019-06-15 오후 5.35.39.png" style="width: 990px;">
+<img src="./img/recursion_stack.png" style="width: 990px;">
 
 n 이 1인 factorial 함수가 실행이 되고, base case를 만나게 되어 더이상 자신을 호출 하지 않고 1이라는 값을 반환하고 종료되므로 stack이 쌓이지 않는다.
 
