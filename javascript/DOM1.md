@@ -21,7 +21,7 @@ document.getElementsBytagName('p'); //해당 요소의 태그로 잡는 것
 
 [이벤트 타입 등 이벤트 관련 내용](https://developer.mozilla.org/en-US/docs/Web/Events) 은 MDN에 자세히 나와있으며 필요할 때 마다 확인해보면 좋을 듯 하다.
 
-**`addEventListener` **
+**`addEventListener`**
 
 `parameter1` : event type : string
 
@@ -77,7 +77,7 @@ $ta.addEventListener('click', function (ev) {
 
 |<img src="./img/dom1_output1.png" style="width: 100px !important; height: auto">|   
 
-**이런 화면이 보여지는데 이때 pink색 영역(span)을 클릭하게 되었을 경우, **
+**이런 화면이 보여지는데 이때 pink색 영역(span)을 클릭하게 되었을 경우,**
 
 * `ev.target` 으로 작성하게 되면 클릭된 영역의 태그가 들어온다.
 
