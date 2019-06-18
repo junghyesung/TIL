@@ -39,19 +39,49 @@ target 과 currentTarget 은 같아보이지만 전혀 다르다.
 
 둘의 차이점을 알아보자.
 
-<script src="https://gist.github.com/junghyesung/9133af28883d3c27e0ecb9624f9d5923.js"></script>
+```html
+<style>
+  .ta {
+    width: 50px;
+    height: 50px;
+    background: red;
+  }
+  
+  .ta span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: pink;
+  }
+</style>
+
+<div class="ta">
+  <span>HI</span>
+</div>
+```
+
+
 
 이런 코드가 있을 때,
 
-<script src="https://gist.github.com/junghyesung/77b970273246a6cfe11a88552e25d7e5.js"></script>
+```js
+var $ta = document.querySelectorAll('.ta');
 
-|<img src="./img/dom1_output1.png" style="width: 100px; height: auto">|   
+$ta.addEventListener('click', function (ev) {
+  ev.target.textContent = 'Bye'; //span을 누르게 된다면 span을 클릭한 것으로 인식
+  ev.currentTarget.textContent = 'Bye'; //span을 누르게 되어도 $ta로 이벤트를 등록했기 때문에 $ta를 클릭한 것으로 인식
+});
+```
+
+
+
+|<img src="./img/dom1_output1.png" style="width: 100px !important; height: auto">|   
 
 **이런 화면이 보여지는데 이때 pink색 영역(span)을 클릭하게 되었을 경우, **
 
 * `ev.target` 으로 작성하게 되면 클릭된 영역의 태그가 들어온다.
 
-  <img src="./img/dom1_html1.png" style="width: 150px; height: auto;"> | |<img src="./img/dom1_output2.png" style="width: 80px; height: auto;">|   
+  <img src="./img/dom1_html1.png" style="width: 150px !important; height: auto;"> | |<img src="./img/dom1_output2.png" style="width: 80px !important; height: auto;">|   
 
   ```js
   console.log(ev.target) //<span>Bye</span>
@@ -63,7 +93,7 @@ target 과 currentTarget 은 같아보이지만 전혀 다르다.
 
 * `ev.currentTarget` 으로 작성하게 되면 이벤트가 등록되어있는 태그가 들어오게 된다.
 
-  |<img src="./img/dom1_html2.png" style="width: 200px; height: auto;">| <img src="./img/dom1_output3.png" style="width: 70px; height: auto;">|
+  |<img src="./img/dom1_html2.png" style="width: 200px !important; height: auto;">| <img src="./img/dom1_output3.png" style="width: 70px !important; height: auto;">|
 
 ```js
 console.log(ev.currentTarget) //<div class="ta">Bye</div>
